@@ -1,0 +1,22 @@
+ping ( ping -c 5 8.8.8.8 ):- to check the reaachianility of a host on an internet protocol network 
+
+netstat ( netstat -a, netstat -tulnp, netstat -r) :- to display active network connections, routing tables, interfaces stattics, masquerade connnections 
+
+ifconfig ( ifconfig sudo ifconfig eth0 192.168.1.10 netmask 255.255.255.0 up ) :- to display the confogurations of network 
+
+
+traceroute (traceroute google.com) :- to display the route and measure transit delays of packets across an internet protocol network 
+
+mtr ( mtr google.com, mtr 8.8.8.8) :- mtr is used to combine the functionalities of the ping an traceroute commands
+
+
+telnet ( telnet 192.168.1.20 22, telnet google.com 80) :- this command is used in oneline to establish a connection to a specific hsot and port 
+
+iwconfig ( iwconfig, sudo iwconfig wlan0 essid "MyWiFi") :- is typically used to configure wireless network interfaces on Linux systems 
+
+
+dig (dig google.com, dig +short google.com, dig MX gmail.com) :- to query DNS name servers for information about host address, mail exchanges, anme servers and related information.
+
+whois ( whois example.com) -: command is sued to retirve information about registered domain names. IP addresses, and autonomous system
+
+wget (wget https://example.com/file.zip, wget --progress=bar https://example.com/file.iso, wget -r https://example.com):- the wget command is used for downloading files from the internet. 

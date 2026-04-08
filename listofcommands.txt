@@ -1,0 +1,48 @@
+cd /var/lib/derby -----> path tot eh derby folder
+cat derby.log----? derby log file 
+
+cd /var/log/comm-services/CommServer---------> path to the commserver.log 
+cat CommServer.log ------> CommServer log file 
+
+
+
+
+kafka-consumer-reset-offset-to-latest --------> command to rest the kafka in the db-mi.prosa.com 
+
+
+clearing of storage in db-mi server 
+df -h command to check the storage 
+
+du-sh to check the individual stoage with human readbale data 
+
+du -sh /opt/kafka/* | sort -hr -----> sorts the file in the ascending order 
+
+cd /opt/kafka -----> delete the log files from the kafka and free the database storage in /opt folder 
+
+to delete rm -rf *.log------> deletes all the log file from the log folder 
+
+
+
+clear the storage in the as -mi 
+df -h to know the storage occupied by the file system 
+cd /var/log/prosa ---> path to the logs 
+rm -rf <logfilenmae> ----> inside the path which releases the root storage and free up the space 
+
+
+
+
+
+top -----> to know the cpu usage run the command as 
+
+
+
+login to bk-mi.prosa.com
+
+su - barman ---------> command to login for user 
+
+barman list-backups <server name> -----> to see the lsit of files in the barman and 
+
+barman delete <server name> -------> to delete the failed back up files and release the storage in the bk-mi server 
+repeat the same with all the listed pg files in the bk-mi server
+
+
