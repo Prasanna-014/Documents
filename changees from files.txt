@@ -1,0 +1,4 @@
+changed this script in variable file under commonparentfolder 
+
+- name: MAVEN_OPTS
+  value: '-Dmaven.repo.local="$(MAVEN_CACHE_FOLDER)" -Dhttps.protocols=TLSv1.2 -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=WARN -Dorg.slf4j.simpleLogger.showDateTime=true'

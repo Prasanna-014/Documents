@@ -1,0 +1,240 @@
+to change the oelocation code and code and all use this command :- cd /etc/systemd/system
+systemctl restart <filename.service>
+
+
+cd /var/log/prosa
+
+
+path for all the jar files cd /usr/local/vebox/
+/usr/local/vebox/apps# 
+
+
+
+Bellatrix
+----------------------------------------------------------------------
+/usr/local/CommServer/server.properties
+ 
+/etc/init.d/CommServer 
+
+path to add the user into the group:-  visudo -f /etc/sudoers.d/prosa
+	username ALL=(ALL) NOPASSWD: ALL
+
+ --------------------------------------------------------
+
+ cd /opt/tomcat/as-1
+ cd /opt/tomcat/as-1/logs
+
+
+all propertties path :- /etc/vebox/eda-door-ftp.properties
+
+
+
+artifcats place:- /cd /s# 
+
+
+/opt/tomcat/as-1/conf#
+restart veboxweb and restapi:- systemctl restart tomcat-9-1.service
+systemctl status tomcat-9-1.service
+
+/opt/tomcat/webapps/rest-api# to check the artifcats
+
+
+
+/opt/pentaho/ETL#
+chown pentaho:pentaho -R ETL,NEW
+
+sudo -u pentaho /usr/local/bin/ETL
+ 
+mv ETL/ ETL.OLD/
+ 
+mv ETL.NEW/* .
+ 
+
+
+
+vbx.ts-mi.prosa.com
+
+Pre-prod:- 4ptOWLABDn5c6pOcnbr3skKiYsibnhKshgxGrxK0tWYCi3zbXxK6JQQJ99BLACAAAAAfzhW0AAASAZDO25ew
+ 
+prosa_user/Pr3D4nf0ss
+ 
+commad to check the comm server status:-  /usr/local/bin/CommServer status
+command to start the comm server :- /usr/local/bin/CommServer <start
+
+
+
+ETL commands :- sudo -u pentaho git config credential.helper store
+
+
+/usr/local/bin/ETL
+
+sudo -u pentaho /usr/local/bin/ETL
+ sudo -u pentaho /usr/local/bin/ETL enable
+
+
+217.168.224.146:- chewbe 
+
+sudo su -
+nagios path :- cd /etc/nagios
+/etc/nagios/objects/prosa#
+contacts.cfg
+
+log_file=/var/log/nagios/nagios.log
+Validate Nagios Configuration After saving the file, validate that the Nagios configuration has no syntax errors:nagios -v /etc/nagios/nagios.cfg
+
+
+password UTuVvFVA
+
+ts-mi.prosa.com
+pp-mi.prosa.com
+as-mi.prosa.com
+as-rm.prosa.com reduancy
+bellatrix.prosa.com
+
+
+
+
+commands to check the admin users
+getent group wheel
+
+
+
+
+
+
+
+
+databse 
+
+
+cd /var/lib/pqsql/ll/data-1# datas 
+
+
+root@TS-MI: sudo su - postgres
+postgres=#  CREATE USER "aiconnexio.aiconnexio" WITH PASSWORD 'e4g5EmBk3Xxu';
+
+to confirm the role has created 
+postgres=# SELECT rolname FROM pg_roles WHERE rolname = 'abhijeet.dorge';
+
+usage acccesss :- GRANT USAGE ON SCHEMA public TO "abhijeet.dorge";
+
+to give the write acess and all :- GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO "abhijeet.dorge";
+
+
+revoke the access:- REVOKE INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public FROM "aiconnexio.aiconnexio";
+
+
+psql -p 7001 -U postgres
+ 
+\c vbx_comm
+ 
+GRANT USAGE ON SCHEMA public TO "aiconnexio.aiconnexio";
+
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO "aiconnexio.aiconnexio";
+ 
+grant usages for other schemas in the database
+
+GRANT USAGE ON SCHEMA lavazza TO "aiconnexio.aiconnexio";
+GRANT SELECT ON ALL TABLES IN SCHEMA lavazza TO "aiconnexio.aiconnexio";
+
+
+
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+
+GRANT SELECT ON TABLES TO "aiconnexio.aiconnexio";
+ 
+
+groupadd --gid 99999 aiconnexio.aiconnexio
+
+ useradd --uid 99999 --gid 99999 aiconnexio.aiconnexio
+
+
+mail path :- /var/spool/mail/root
+
+useradd --uid 1050 --gid 1050 prasanna.bijapur
+
+
+
+
+to list the users in the server :- cut -d: -f1 /etc/passwd
+cd
+sudo userdel -r ivan.mazzetto
+
+
+sudo
+
+super user query :- ALTER ROLE "prashant.dhamgunde" WITH SUPERUSER;
+check the user access :- SELECT rolname, rolsuper FROM pg_roles WHERE rolname = 'prashant.dhamgunde';
+
+
+ 
+
+while read user; do
+    sudo userdel -r "$user"
+done < users.txt
+
+
+
+while read -r user; do
+    id "$user" &>/dev/null && userdel -r "$user" || echo "Skipping (not found): $user"
+done < user.txt
+
+
+pkill -u username
+
+
+path visudo -f /etc/sudoers.d/prosa
+ALL=(ALL) NOPASSWD: ALL
+
+chown permission 
+read access : chmod 444 file
+read + write access :- chmod 555 dir
+
+read +write accesss :- chmod 664 file
+dir :- chmod 775 dir
+
+
+full access :- chmod 777 file
+
+
+chown -R aiconnexio.aiconnexio:staff /opt/myapp
+-R = recursive Changes ownership for: the directory all files inside it all subdirectories
+
+
+
+
+grep -R "prashant.dhamgunde" /etc/nagios/
+
+
+crontab /etc/crontab :-  removed the mails 
+
+
+
+grep -R "@danfoss.com" /etc /root /var /opt /usr/local 2>/dev/null
+
+to kill the process:- loginctl terminate-user <userrname>
+
+
+to list the login sessions :- loginctl list-sessions
+
+loginctl terminate-session <session id >
+
+force kill:- pkill -u <username>
+aggresive kill :- killall -u <useranme>
+
+kill using id's:- kill -9 <id>
+
+to check the process is still active or not :- ps -fp <UID>
+
+
+force kill processs :- loginctl kill-session 166639
+
+lock the user and it prevents the user from loggin :- usermod -L <username>
+
+to check the what all they have performed :- loginctl session-status <sessionid>
+
+
+•	postalias /etc/aliases
+•	postfix reload
+
+
