@@ -1,0 +1,14 @@
+who or w  -- this shows active suers 
+
+ps -u username -f --to see the proicess or running command by the user.
+
+top -u username -- to view live 
+
+htop --to view the cpu usage 
+
+top -u username -- to view the cpu from the particular user.
+
+  htop
+
+  sudo strace -p <PID> to see the live commands 
+
