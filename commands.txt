@@ -12,3 +12,12 @@ top -u username -- to view the cpu from the particular user.
 
   sudo strace -p <PID> to see the live commands 
 
+for using mailx:- echo "Test body" | mailx -s "Test Mail" -a /path/file.txt user@domain.com
+
+
+using mail :- mail -s "Subject" -A /path/file.txt user@domain.com
+
+using mutt :- echo "Body" | mutt -s "Test Mail" -a /path/file.txt -- user@domain.com
+
+
+
